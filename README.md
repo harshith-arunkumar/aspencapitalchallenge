@@ -40,3 +40,22 @@ The expectation is that we can easily follow the steps provided and run the appl
 * Details on anything further that you would like to achieve given more time, including any trade-offs that you may have made.
 
 Good luck and thank you for your time - we look forward to seeing your submission.
+
+## File Structure
+* The codebase contains two files which perform the following:
+	* app.py : Main file that contains the logic
+	* test.py : Three testcases for the logic in app.py
+
+## How to Run 
+* Install the required dependencies: To run the code, you'll need to have Python and Flask installed on your machine. You can install Flask and the other required dependencies by running the following command in your terminal:
+	* pip install Flask Flask-SQLAlchemy
+
+* Start the deployment server using this command: 
+	* python app.py
+	* 
+* Test the endpoints: You can now test the endpoints using a tool like curl, or by opening them in a web browser. For example, you can start a game by sending a POST request to http://localhost:5000/start_game, and you can get lifetime wins by sending a GET request to http://localhost:5000/lifetime_wins. You can also reset the game using http://localhost:5000/reset_game
+
+* The output will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
+
+* Run the tests using the following command:
+	* python3 test.py
