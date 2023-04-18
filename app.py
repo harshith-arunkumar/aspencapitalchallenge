@@ -133,4 +133,5 @@ def reset_game():
     return jsonify({'Status': 'Game has been reset'})
 
 if __name__ == '__main__':
-    app_f.run(debug=True)
+    app_f.run(debug=True, host='0.0.0.0')
+    
