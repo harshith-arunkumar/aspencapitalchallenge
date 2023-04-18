@@ -55,7 +55,10 @@ Good luck and thank you for your time - we look forward to seeing your submissio
 
 * Test the endpoints: You can now test the endpoints using a tool like curl, or by opening them in a web browser. For example, you can start a game by sending a POST request to http://localhost:5000/start_game, and you can get lifetime wins by sending a GET request to http://localhost:5000/lifetime_wins. You can also reset the game using http://localhost:5000/reset_game
 
-* The output will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
-
 * Run the tests using the following command:
 	* python3 test.py
+
+## Output
+
+* The output when going to the start_game URL will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
+* The lifetime_wins URL shows the statistics of the victories.
