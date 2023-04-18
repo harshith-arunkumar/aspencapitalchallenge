@@ -46,7 +46,7 @@ Good luck and thank you for your time - we look forward to seeing your submissio
 	* app.py : Main file that contains the logic
 	* test.py : Three testcases for the logic in app.py
 
-## How to Run 
+## How to Run Without Docker
 * Install the required dependencies: To run the code, you'll need to have Python and Flask installed on your machine. You can install Flask and the other required dependencies by running the following command in your terminal:
 	* pip install Flask Flask-SQLAlchemy
 
@@ -62,3 +62,8 @@ Good luck and thank you for your time - we look forward to seeing your submissio
 
 * The output when going to the start_game URL will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
 * The lifetime_wins URL shows the statistics of the victories.
+
+## How to Run With Docker
+* Use the provided docker image in this repo and run the following command:
+* docker run -p 5000:5000 aspencapitalchallenge
+* Go to http://127.0.0.1:5000/start_game or http://127.0.0.1:5000/lifetime_wins same as described above.
