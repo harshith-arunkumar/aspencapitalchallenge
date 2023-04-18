@@ -2,6 +2,34 @@
 
 Welcome to Aspen Capital's Software Engineer challenge. This assignment will help us better assess your technical and design skills. We recommend that you focus on the requirements listed below, and if time permitting, work on any additional features of your own choosing. These additional features can be new, functional pieces within the application, or even relevant design artifacts. It should be fun and highlight what you think your best skills are.
 
+## File Structure
+* The codebase contains two files which perform the following:
+	* app.py : Main file that contains the logic
+	* test.py : Three testcases for the logic in app.py
+
+## How to Run Without Docker
+* Install the required dependencies: To run the code, you'll need to have Python and Flask installed on your machine. You can install Flask and the other required dependencies by running the following command in your terminal:
+	* pip install Flask Flask-SQLAlchemy
+
+* Start the deployment server using this command: 
+	* python app.py
+
+* Test the endpoints: You can now test the endpoints using a tool like curl, or by opening them in a web browser. For example, you can start a game by sending a POST request to http://localhost:5000/start_game, and you can get lifetime wins by sending a GET request to http://localhost:5000/lifetime_wins. You can also reset the game using http://localhost:5000/reset_game
+
+* Run the tests using the following command:
+	* python3 test.py
+
+## Output
+
+* The output when going to the start_game URL will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
+* The lifetime_wins URL shows the statistics of the victories.
+
+## How to Run With Docker
+* Use the provided docker image in this repo and run the following command:
+* docker run -p 5000:5000 aspencapitalchallenge
+* Go to http://127.0.0.1:5000/start_game or http://127.0.0.1:5000/lifetime_wins same as described above.
+
+
 ## Background
 
 Your task is to implement an application that plays the card game of [War](https://en.wikipedia.org/wiki/War_(card_game))
@@ -41,29 +69,3 @@ The expectation is that we can easily follow the steps provided and run the appl
 
 Good luck and thank you for your time - we look forward to seeing your submission.
 
-## File Structure
-* The codebase contains two files which perform the following:
-	* app.py : Main file that contains the logic
-	* test.py : Three testcases for the logic in app.py
-
-## How to Run Without Docker
-* Install the required dependencies: To run the code, you'll need to have Python and Flask installed on your machine. You can install Flask and the other required dependencies by running the following command in your terminal:
-	* pip install Flask Flask-SQLAlchemy
-
-* Start the deployment server using this command: 
-	* python app.py
-
-* Test the endpoints: You can now test the endpoints using a tool like curl, or by opening them in a web browser. For example, you can start a game by sending a POST request to http://localhost:5000/start_game, and you can get lifetime wins by sending a GET request to http://localhost:5000/lifetime_wins. You can also reset the game using http://localhost:5000/reset_game
-
-* Run the tests using the following command:
-	* python3 test.py
-
-## Output
-
-* The output when going to the start_game URL will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
-* The lifetime_wins URL shows the statistics of the victories.
-
-## How to Run With Docker
-* Use the provided docker image in this repo and run the following command:
-* docker run -p 5000:5000 aspencapitalchallenge
-* Go to http://127.0.0.1:5000/start_game or http://127.0.0.1:5000/lifetime_wins same as described above.
