@@ -25,8 +25,10 @@ Welcome to Aspen Capital's Software Engineer challenge. This assignment will hel
 * The lifetime_wins URL shows the statistics of the victories.
 
 ## How to Run With Docker
-* Use the provided docker image in this repo and run the following command:
-* docker run -p 5000:5000 aspencapitalchallenge
+* Create the docker image with the following command:
+	* docker build -t aspencapitalchallenge .
+* Run the docker using the following command:
+	* docker run -p 5000:5000 aspencapitalchallenge
 * Go to http://127.0.0.1:5000/start_game or http://127.0.0.1:5000/lifetime_wins same as described above.
 
 
