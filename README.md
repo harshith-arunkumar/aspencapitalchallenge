@@ -52,7 +52,7 @@ Good luck and thank you for your time - we look forward to seeing your submissio
 
 * Start the deployment server using this command: 
 	* python app.py
-	* 
+
 * Test the endpoints: You can now test the endpoints using a tool like curl, or by opening them in a web browser. For example, you can start a game by sending a POST request to http://localhost:5000/start_game, and you can get lifetime wins by sending a GET request to http://localhost:5000/lifetime_wins. You can also reset the game using http://localhost:5000/reset_game
 
 * The output will consists of a message for the game being run, with the trace of the different turns in the game, and the final winner.
