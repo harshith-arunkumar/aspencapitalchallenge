@@ -66,3 +66,4 @@ Good luck and thank you for your time - we look forward to seeing your submissio
 ## How to Run With Docker
 * Use the provided docker image in this repo and run the following command:
 * docker run -p 5000:5000 aspencapitalchallenge
+* Go to http://127.0.0.1:5000/start_game or http://127.0.0.1:5000/lifetime_wins same as described above.
